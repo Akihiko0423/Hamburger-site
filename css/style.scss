@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+html {
+  font-size:100%;
+}
+
+img {
+  max-width: 100%;
+}
+//header part
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1100;
+  position: fixed;
+  background: #fff;
+  top: 0;
+  left:0;
+  width:100%;
+  height:70px;
+  .header-left{
+    display:flex;
+    align-items: center;
+    .header-logo{
+      width:180px;
+      padding-left:20px;
+    }
+    p{
+      font-size:14px;
+      padding-left:20px;
+      font-weight: 1000;
+    }
+  }
+  .header-right{
+    .humburger{
+      display:none;
+    }
+    .close_btn{
+      display:none;
+    }
+    .header-link{
+      font-weight: 700;
+      nav{
+        ul{
+          display:flex;
+          align-items:center;
+          li{
+            padding:0 20px;
+            line-height: 71px;
+            position:relative;
+            a{
+              text-decoration: none;
+              color:black;
+            }
+            &:hover{
+              background-color: #d4f1f8;
+              cursor:pointer;
+              .close{
+                display:block;
+                color:black;
+              }
+            }
+            //アコーディオン部分
+            .sub-menu{
+              padding:0;
+              position:absolute;
+              top:70px;
+              left:0px;
+              z-index:1200;
+              display:block;
+              width:250px;
+              background-color: white;
+              &-min{
+                @extend .sub-menu;
+                width:200px;
+              }
+              li a{
+                display:block;
+              }
+            }
+            .close{
+              display:none;
+            }
+          }
+          .apply{
+            background-color:#2498b3;
+            &:hover{
+              background-color:#2498b3;
+            }
+            & a{
+              color:white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//top
+.top-space{
+  height:70px;
+}
+
+//main part
+main{
+  .main-top{
+    background: url(../img/bg-hero3.png) no-repeat center center/cover fixed;
+    z-index:4;
+    position:relative;
+    height:650px;
+    .layer1{
+      background: url(../img/bg-hero2.png) no-repeat center center;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      .main-title{
+        width:415px;
+        margin:80px auto 0;
+        text-align:center;
+        background-color:white;
+        padding-bottom:25px;
+        border-radius:10px;
+        position:absolute;
+        z-index: 100;
+        display: block;
+        .main-title-wrapper{
+          h2{
+            width:280px;
+            margin:0 auto;
+            padding-top:42px;
+            img{
+              width:280px;
+            }
+          }
+          p{
+            font-weight:700;
+          }
+          .main-text{
+            margin:25px 0 25px;
+            letter-spacing:0.5px;
+            line-height:27px;
+          }
+          .btn {
+            width:300px;
+            background-color:#2498b3;
+            padding:23px 0 18px;
+            border-radius:5px;
+            margin: 0 auto;
+            & a{
+              color:white;
+              text-decoration: none;
+              font-size:18px;
+            }
+          }
+        }
+      }
+      .layer2{
+        background: url(../img/bg-hero1.png) no-repeat center center;
+        z-index: 2;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+      }
+    }
+  }
+  //黒背景
+  .black-bg{
+    background-color: black;
+    padding-bottom:100px;
+    .main-detail{
+      width:1000px;
+      margin:0px auto;
+      display:flex;
+      justify-content: center;
+      margin-top: -200px;
+      position:relative;
+      z-index:100;
+      .detail{
+        width:33%;
+        .radius{
+          width:230px;
+          height:230px;
+          background-color:white;
+          border:solid 5px black;
+          border-radius: 50%;
+          margin:0 auto;
+          .icon{
+            i{
+              width:100%;
+              line-height: 220px;
+              text-align:center;
+            }
+          }
+        }
+        .detail-text{
+          font-weight:700;
+          color:white;
+          width:230px;
+          margin:0 auto;
+          h2{
+            text-align:center;
+            padding:10px 0 10px;
+          }
+        }
+      }
+    }
+  }
+}
+//ハンバーガーボタンのチェックボックスは外す
+#menu-btn-check{
+  display:none;
+}
+
+
+
+
+
+
+
+

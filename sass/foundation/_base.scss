@@ -1,0 +1,15 @@
+
+html {
+  font-size:100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+.container{
+  display:grid;
+  grid-template-rows:217px 2626px 150px;
+  grid-template-columns: 1fr 19%;
+}
