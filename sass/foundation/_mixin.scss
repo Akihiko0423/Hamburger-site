@@ -1,0 +1,19 @@
+@charset "UTF-8";
+$tab: 1024px;    //タブレットの最大幅
+$smafo:599px;   //スマートフォンの最大幅
+$header:217px;  //headerの高さ
+$main:2626px;   //mainの高さ
+$footer:150px;  //footerの高さ
+
+//岩井さんリスペクト
+@mixin tab {
+    @media (max-width: ($tab)) {     //画面サイズが1024以下の時にタブレット
+        @content;
+    }
+}
+// タブレット
+@mixin smafo {
+    @media (max-width: ($smafo)) {    //画面サイズが599以下の時スマフォ
+        @content;
+    }
+}

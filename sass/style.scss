@@ -1,4 +1,3 @@
-@charset "UFT-8";
 // ==========================================================================
 // Foundation
 // ==========================================================================
@@ -11,6 +10,7 @@
 // Layout
 // ==========================================================================
 
+@import "layout/_container";
 @import "layout/_header";
 @import "layout/_main";
 @import "layout/_sidebar";
@@ -24,24 +24,23 @@
 // Component
 // -----------------------------------------------------------------
 
-@import "object/component/_button";
-@import "object/component/_dialog";
-@import "object/component/_grid";
-@import "object/component/_media";
 @import "object/component/_search-form";
 @import "object/component/_takeout-detail";
+@import "object/component/_tablet-background";
 
 // -----------------------------------------------------------------
 // Project
 // -----------------------------------------------------------------
 
-@import "object/project/_header-wrapper";
-@import "object/project/_main-bottom-map";
+@import "object/project/_header";
 @import "object/project/_main-visual";
-@import "object/project/_footer-wrapper";
+@import "object/project/_main-section";
+@import "object/project/_main-map";
+@import "object/project/_sidebar-menu";
+@import "object/project/_footer";
 
 // -----------------------------------------------------------------
-// ほぼ使っていないUtility
+//ほぼ使っていないUtility
 // -----------------------------------------------------------------
 
 @import "object/utility/_align";
@@ -50,3 +49,5 @@
 @import "object/utility/_position";
 @import "object/utility/_size";
 @import "object/utility/_text";
+
+

@@ -1,12 +1,20 @@
 .p-main-visual{
-    width:100%;
+    background-image:url(../img/main-visual.png);
+    background-size:100% 100%;
+    background-position: center;
     height:530px;
     position:relative;
-    .p-main-title{
+    @include tab{
+        height:285px;
+    }
+    &-title{
         position:absolute;
-        top:231px;
+        top:43%;
         left:86px;
         color:white;
         font-size:40px;
+        @include smafo{
+            left:25px;
+        }
     }
 }

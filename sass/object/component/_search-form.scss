@@ -1,6 +1,12 @@
+.c-search-form{
+    width:100%;
+}
+
+
+
 .c-search-form__keyword {
-    width: 330px;
-    height: 40px;
+    width: 70%;
+    line-height:45px;
     display: inline-block;
     font-family: "Font Awesome 5 Free";
     font-weight: 700;
@@ -9,11 +15,14 @@
     font-size: 25px;
     margin-right:20px;
     padding-left:10px;
+    @include smafo{
+        margin-right:5px;
+    }
 }
 
 .c-search-form__btn{
-    width:120px;
-    height:41px;
+    width:20%;
+    padding:14px 0  6px;
     border-radius:2px;
     background:#F2EDE9;
     color:#707070;
@@ -21,5 +30,9 @@
     font-size:16px;
     border:2px solid #707070;
     border-radius:10px;
+    &:hover{
+        opacity:0.8;
+        cursor:pointer;
+    }
 }
 

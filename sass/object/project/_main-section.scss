@@ -1,0 +1,105 @@
+.p-main-section{
+    display:flex;
+    justify-content:space-between;
+    margin-top:120px;
+    height:1193px;
+    @include smafo{
+        margin-top:20px;
+        flex-direction: column;
+    }
+    .p-takeout{
+        margin-left:7%;
+        margin-right:3%;
+        position:relative;
+        width:50%;
+        height:100%;
+        @include smafo{
+            width:90%;
+            margin:0px auto 20px;
+        }
+        background-image:url(../img/takeout.png);
+        background-size:cover;
+        &-title{
+            position:absolute;
+            left:20px;
+            top:20px;
+            font-size:5vw;
+            color:#EAEAEA;
+            &::after{
+                content: "";
+                width: 63px;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: -23px;
+                background: white;
+            }
+            @include smafo{
+                font-size:46px;
+            }
+        }
+        &-detail--top{
+            position:absolute;
+            left:2.5%;
+            top:67%;
+            @include smafo{
+                top:38%;
+            }
+        }
+        &-detail--bottom{
+            position:absolute;
+            left:2.5%;
+            top:83%;
+            @include smafo{
+                top:69%;
+            }
+        }
+    }
+    .p-eatin{
+        margin-right:7%;
+        position:relative;
+        width:50%;
+        height:100%;
+        background-image:url(../img/eatin.png);
+        background-size:cover;
+        @include smafo{
+            width:90%;
+            margin:0 auto;
+        }
+        &-title{
+            position:absolute;
+            left:20px;
+            top:20px;
+            font-size:5vw;
+            color:white;
+            &::after{
+                content: "";
+                width: 63px;
+                height: 2px;
+                position: absolute;
+                left: 0;
+                bottom: -23px;
+                background: white;
+            }
+            @include smafo{
+                font-size:46px;
+            }
+        }
+        &-detail--top{
+            position:absolute;
+            left:2.5%;
+            top:67%;
+            @include smafo{
+                top:38%;
+            }
+        }
+        &-detail--bottom{
+            position:absolute;
+            left:2.5%;
+            top:83%;
+            @include smafo{
+                top:69%;
+            }
+        }
+    }
+}
