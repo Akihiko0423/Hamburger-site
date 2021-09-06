@@ -5,17 +5,23 @@
     @include tab{
         position:absolute;
         top:0%;
-        left:50%;
+        left:100%;
         width:50%;
         height:2993px;
         z-index:100;
-        display:none;
+        transition: left 0.3s;
     }
     @include smafo{
         width:80%;
-        left:20%;
     }
 }
 .open{
-    display:block !important;
+    display: block !important;
+}
+
+.open-slide{
+    left:50%;
+    @include smafo{
+        left:20%;
+    }
 }

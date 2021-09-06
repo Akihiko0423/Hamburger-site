@@ -137,23 +137,33 @@ select {
   .l-sidebar {
     position: absolute;
     top: 0%;
-    left: 50%;
+    left: 100%;
     width: 50%;
     height: 2993px;
     z-index: 100;
-    display: none;
+    -webkit-transition: left 0.3s;
+    transition: left 0.3s;
   }
 }
 
 @media (max-width: 599px) {
   .l-sidebar {
     width: 80%;
-    left: 20%;
   }
 }
 
 .open {
   display: block !important;
+}
+
+.open-slide {
+  left: 50%;
+}
+
+@media (max-width: 599px) {
+  .open-slide {
+    left: 20%;
+  }
 }
 
 .l-footer {
@@ -299,17 +309,11 @@ select {
     right: 26px;
     top: 10px;
     color: #707070;
-    font-size: 34px;
+    font-size: 20px;
   }
   .p-header-menu-btn:hover {
     cursor: pointer;
     opacity: 0.8;
-  }
-}
-
-@media (max-width: 599px) {
-  .p-header-menu-btn {
-    font-size: 20px;
   }
 }
 
