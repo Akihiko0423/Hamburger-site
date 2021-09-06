@@ -7,11 +7,12 @@
         top:0%;
         left:100%;
         width:50%;
-        height:2993px;
+        height:2747px;
         z-index:100;
         transition: left 0.3s;
     }
     @include smafo{
+        height:2566px;
         width:80%;
     }
 }
