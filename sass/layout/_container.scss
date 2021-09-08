@@ -1,13 +1,8 @@
 .l-container{
     display:grid;
-    grid-template-rows:$header $main $footer;
+    grid-template-rows:$header 1fr $footer;
     grid-template-columns: 1fr 19%;
-}
-
-/* tabret size */
-
-@media (max-width: $tab){
-    .l-container{
+    @include tab{
         display:block;
     }
 }
