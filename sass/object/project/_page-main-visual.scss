@@ -1,0 +1,26 @@
+.p-page-main-visual{
+    width:100%;
+    height:500px;
+    background-image:url(../img/page-main-visual.png);
+    background-size:cover;
+    background-position: 25%;
+    position:relative;
+    background-color:black;
+    color:white;
+    @include smafo{
+        height:225px;
+    }
+    h1{
+        font-size:4vw;
+        padding-top:208px;
+        padding-left:60px;
+        @include tab{
+            font-size:7vw;
+        }
+        @include smafo{
+            padding-top:91px;
+            padding-left:26px;
+            font-size:8vw;
+        }
+    }
+}

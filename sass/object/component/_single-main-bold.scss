@@ -1,0 +1,15 @@
+.c-single-main-bold{
+    @include single-main-width;
+    margin-bottom:352px;
+    @include tab{
+        margin-bottom:228px;
+    }
+    @include smafo{
+        margin-bottom:177px;
+    }
+    p{
+        color:$single-text-color;
+        font-weight:bold;
+        font-size:16px;
+    }
+}

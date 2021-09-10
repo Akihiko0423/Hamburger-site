@@ -1,0 +1,31 @@
+.p-single-main-table{
+    @include single-main-width;
+    margin-bottom:60px;
+    @include smafo{
+        margin-bottom:30px;
+    }
+    table{
+        border-collapse:collapse;
+        width:100%;
+        td{
+            height:77px;
+            padding-left:30px;
+            border:solid 1px #707070;
+            @include smafo{
+                padding-left:5%;
+            }
+        }
+        .c-first-column{
+            width:30%;
+            @include smafo{
+                width:40%;
+            }
+        }
+        .c-second-column{
+            width:70%;
+            @include smafo{
+                width:60%;
+            }
+        }
+    }
+}

@@ -1,0 +1,17 @@
+.p-single-main-list{
+    @include single-main-width;
+    margin-top:40px;
+    color:#3C2A10;
+    .c-list{
+        &-first{
+            margin-bottom:20px;
+        }
+        &-second{
+            margin-bottom:20px;
+            margin-left:10px;
+        }
+        &-third{
+            margin-bottom:60px;
+        }
+    }
+}

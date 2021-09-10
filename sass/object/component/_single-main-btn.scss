@@ -1,0 +1,29 @@
+.c-single-main-btn{
+    margin-bottom:60px;
+    margin-left:5%;
+    width:429px;
+    height:104px;
+    background-color: #F2EDE9;
+    border-radius: 30px;
+    border:solid 0.5px #707070;
+    &:hover{
+        background-color:rgba(242,237,233,0.8);
+    }
+    @include smafo{
+        height: 81px;
+        width:90%;
+        margin:0 auto 30px auto;
+    }
+    a{
+        display:block;
+        text-align: center;
+        line-height:104px;
+        text-decoration: none;
+        color:$single-text-color;
+        font-size:16px;
+        font-weight:bold;
+        @include smafo{
+            line-height:81px;
+        }
+    }
+}

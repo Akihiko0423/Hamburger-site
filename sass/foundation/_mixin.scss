@@ -5,6 +5,9 @@ $smafo:599px;   //スマートフォンの最大幅
 $header:217px;  //headerの高さ
 $footer:150px;  //footerの高さ
 
+$single-text-color:#3C2A10;//singleページのtextのカラー
+
+
 
 
 @mixin tab {
@@ -17,4 +20,9 @@ $footer:150px;  //footerの高さ
     @media (max-width: ($smafo)) {    //画面サイズが599以下の時スマフォ
         @content;
     }
+}
+//single-pageのmainのwidthの設定
+@mixin single-main-width {
+    width:90%;
+    margin:0 auto;
 }

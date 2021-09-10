@@ -1,0 +1,82 @@
+.p-single-main-many-photo{
+    @include single-main-width;
+    .p-photo-big{
+        height:500px;
+        margin-bottom:60px;
+        background-image: url(../img/single-burger-photo.png);
+        background-size:cover;
+        background-position: center;
+        @include tab{
+            height:264px;
+        }
+        @include smafo{
+            height:124px;
+            margin-bottom:30px;
+        }
+    }
+    .p-photo-left,.p-photo-right{
+        display:flex;
+        justify-content: space-between;
+        margin-bottom:60px;
+        .c-photo-left,.c-photo-right{
+            width:42%;
+            height:358px;
+            background-image: url(../img/single-burger-photo-small.png);
+            background-size:cover;
+            background-position: bottom;
+            @include tab{
+                height:189px;
+            }
+            @include smafo{
+                height:89px;
+            }
+        }
+        p{
+            width:55%;
+            color:$single-text-color;
+            .p-pc-text{
+                @include smafo{
+                    display:none;
+                }
+            }
+        }
+    }
+    .p-photo-center{
+        width: 581px;
+        height:358px;
+        margin:0 auto;
+        margin-bottom:60px;
+        background-image: url(../img/single-burger-photo-small.png);
+        background-size:cover;
+        background-position: bottom;
+        @include tab{
+            margin-bottom:241px;
+            width:80%;
+        }
+        @include smafo{
+            height:166px;
+            margin-bottom:60px;
+        }
+    }
+    .p-photo-many{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:space-between;
+        &-flex{
+            width:32.5%;
+            height:257px;
+            margin-bottom:20px;
+            background-image: url(../img/single-burger-photo-small.png);
+            background-size:cover;
+            background-position: bottom;
+            @include tab{
+                height:205px;
+                width:49%;
+            }
+            @include smafo{
+                width:100%;
+            }
+        }
+
+    }
+}
