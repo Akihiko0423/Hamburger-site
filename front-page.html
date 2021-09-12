@@ -17,16 +17,17 @@
       <!--header part-->
       <header class = "l-header">
         <div class = "p-header">
-          <div class = "p-header-left">
+          <div class = "p-header__left">
             <h1 class = "c-header-left__logo"><img src="img/pc_logo.png" alt="header-logo"></h1>
           </div>
-          <div class = "p-header-right"> 
+          <div class = "p-header__right"> 
             <form class = "c-search-form" action="#">
-              <input class = "c-search-form__keyword" type="text" placeholder="&#xf002; 検索する">
+              <label for="search" class = "screen-reader-text"></label>
+              <input id = "search" name = "search" class = "c-search-form__keyword" type="text" placeholder="&#xf002; 検索する">
               <input class = "c-search-form__btn" type="submit" value="検索">
             </form>
           </div>
-          <div class = "p-header-menu-btn">
+          <div class = "p-header__menu-btn">
             <h2>Menu</h2>
           </div>
         </div>
@@ -35,28 +36,28 @@
       <main class = "l-main">
         <!--main-visual part-->
         <div class = "p-main-visual"><!--mainvisual画像-->
-          <h2 class = "p-main-visual-title">ダミーサイト</h2>
+          <h2 class = "p-main-visual__title">ダミーサイト</h2>
         </div>
         <!--main-section part-->
         <div class = "p-main-section">
           <section class = "p-takeout"><!--takeout画像-->
-            <h3 class = "p-takeout-title">Take Out</h3>
-            <div class = "p-takeout-detail--top c-takeout-detail">
+            <h3 class = "p-takeout__title">Take Out</h3>
+            <div class = "p-takeout__detail--top c-takeout-detail">
               <h4>Take OUT</h4>
               <p>当店のテイクアウトで利用できる商品を掲載しています</p>
             </div>
-            <div class = "p-takeout-detail--bottom c-takeout-detail">
+            <div class = "p-takeout__detail--bottom c-takeout-detail">
               <h4>Take OUT</h4>
               <p>当店のテイクアウトで利用できる商品を掲載しています</p>
             </div>
           </section>
           <section class = "p-eatin"><!--eatin画像-->
-            <h3 class = "p-eatin-title">Eat In</h3>
-            <div class = "p-eatin-detail--top c-takeout-detail">
+            <h3 class = "p-eatin__title">Eat In</h3>
+            <div class = "p-eatin__detail--top c-takeout-detail">
               <h4>Take OUT</h4>
               <p>当店のテイクアウトで利用できる商品を掲載しています</p>
             </div>
-            <div class = "p-eatin-detail--bottom c-takeout-detail">
+            <div class = "p-eatin__detail--bottom c-takeout-detail">
               <h4>Take OUT</h4>
               <p>当店のテイクアウトで利用できる商品を掲載しています</p>
             </div>
@@ -66,8 +67,8 @@
         <div class = "p-main-map">
           <div class = "p-background-black"></div>
           <div class = "p-background-gray"></div>
-          <div class = "p-main-map-photo"></div>
-          <div class = "p-main-map-text">
+          <div class = "p-main-map__photo"></div>
+          <div class = "p-main-map__text">
             <h3>見出しが入ります</h3>
             <p>
               テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
@@ -87,14 +88,14 @@
       <!--sidebar part-->
       <div class = "l-sidebar">
         <div class = "p-menu">
-          <h2 class = "p-menu-title">Menu</h2>
+          <h2 class = "p-menu__title">Menu</h2>
           <!--タブレット時のメニューバーの×ボタン-->
           <div class = "p-close-btn"><span class="batsu"></span></div>
           <nav>
             <ul>
-              <li class = "p-menu-kind">
+              <li class = "p-menu__kind">
                 <h3>バーガー</h3>
-                <ul class = "p-menu-kind-detail">
+                <ul class = "p-menu__kind__detail">
                   <li><a href="http://127.0.0.1:5500/git/Hamburger-site/archive-search.html">ハンバーガー</a></li>
                   <li><a href="http://127.0.0.1:5500/git/Hamburger-site/archive.html">チーズバーガー</a></li>
                   <li><a href="#">テリヤキバーガー</a></li>
@@ -104,18 +105,18 @@
                   <li><a href="#">チキンバーガー</a></li>
                 </ul>
               </li>
-              <li class = "p-menu-kind">
+              <li class = "p-menu__kind">
                 <h3>サイド</h3>
-                <ul class = "p-menu-kind-detail">
+                <ul class = "p-menu__kind__detail">
                   <li><a href = "#">ポテト</a></li>
                   <li><a href = "#">サラダ</a></li>
                   <li><a href = "#">ナゲット</a></li>
                   <li><a href = "#">コーン</a></li>
                 </ul>              
               </li>
-              <li class = "p-menu-kind">
+              <li class = "p-menu__kind">
                 <h3>ドリンク</h3>
-                <ul class = "p-menu-kind-detail">
+                <ul class = "p-menu__kind__detail">
                   <li><a href = "#">コーラ</a></li>
                   <li><a href = "#">ファンタ</a></li>
                   <li><a href = "#">オレンジ</a></li>

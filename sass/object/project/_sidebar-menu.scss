@@ -4,7 +4,7 @@
     padding-top:82px;
     margin:0 auto;
     color:#707070;
-    &-title{
+    &__title{
         padding-bottom:68px;
         font-size:2.0vw;
         //タブレット以下の幅は消す
@@ -12,7 +12,7 @@
             display:none;
         }
     }
-    &-kind{
+    &__kind{
         h3{
             padding:17px 0 40px;
             font-size:1.4vw;
@@ -20,7 +20,7 @@
                 font-size:24px;               
             }
         }
-        &-detail{
+        &__detail{
             padding-left:20px;
             font-size:1.0vw;
             @include tab{

@@ -29,7 +29,7 @@
             height:60%;
         }
     }
-    &-photo{
+    &__photo{
         position:absolute;
         left:0px;
         top:0px;
@@ -39,7 +39,7 @@
         background-image:url(../img/map.png);
         background-size:cover;
     }
-    &-text{
+    &__text{
         position:absolute;
         z-index:3;
         color:white;

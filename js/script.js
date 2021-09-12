@@ -1,5 +1,5 @@
 $(function(){
-    $('.p-header-menu-btn').click(function(){
+    $('.p-header__menu-btn').click(function(){
         $('.l-sidebar').addClass('open-slide'); //サイドバーのスライド
         $('.c-tablet-background--gray').addClass('open');//グレー背景の表示
     });

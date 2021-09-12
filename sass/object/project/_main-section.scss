@@ -19,7 +19,7 @@
         }
         background-image:url(../img/takeout.png);
         background-size:cover;
-        &-title{
+        &__title{
             position:absolute;
             left:20px;
             top:20px;
@@ -38,7 +38,7 @@
                 font-size:46px;
             }
         }
-        &-detail--top{
+        &__detail--top{
             position:absolute;
             left:2.5%;
             top:67%;
@@ -46,7 +46,7 @@
                 top:38%;
             }
         }
-        &-detail--bottom{
+        &__detail--bottom{
             position:absolute;
             left:2.5%;
             top:83%;
@@ -66,7 +66,7 @@
             width:90%;
             margin:0 auto;
         }
-        &-title{
+        &__title{
             position:absolute;
             left:20px;
             top:20px;
@@ -85,7 +85,7 @@
                 font-size:46px;
             }
         }
-        &-detail--top{
+        &__detail--top{
             position:absolute;
             left:2.5%;
             top:67%;
@@ -93,7 +93,7 @@
                 top:38%;
             }
         }
-        &-detail--bottom{
+        &__detail--bottom{
             position:absolute;
             left:2.5%;
             top:83%;

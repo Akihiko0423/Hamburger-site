@@ -8,7 +8,7 @@
         display:block;
         position:relative;
     }
-    &-left{
+    &__left{
         margin-left:5%;
         @include tab{
             width:203px;
@@ -16,7 +16,7 @@
             padding:40px 0 38px;
         }
     }
-    &-right{
+    &__right{
         margin-right:30px;
         margin-top:10px;
         margin-left:30px;
@@ -29,7 +29,7 @@
             width:80%;
         }
     }
-    &-menu-btn{
+    &__menu-btn{
         display:none;
         @include tab{
             display:block;

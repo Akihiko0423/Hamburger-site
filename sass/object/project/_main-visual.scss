@@ -1,13 +1,14 @@
 .p-main-visual{
     background-image:url(../img/main-visual.png);
-    background-size:100% 100%;
+    background-size:cover;
     background-position: center;
+    object-fit: cover;
     height:530px;
     position:relative;
     @include tab{
         height:285px;
     }
-    &-title{
+    &__title{
         position:absolute;
         top:43%;
         left:86px;
