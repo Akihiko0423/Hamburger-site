@@ -17,16 +17,17 @@
       <!--header part-->
       <header class = "l-header">
         <div class = "p-header">
-          <div class = "p-header-left">
-            <h1 class = "c-header-left__logo"><a href="http://127.0.0.1:5500/git/Hamburger-site/front-page.html"><img src="img/pc_logo.png" alt="header-logo"></a></h1>
+          <div class = "p-header__left">
+            <h1 class = "c-header-left__logo"><img src="img/pc_logo.png" alt="header-logo"></h1>
           </div>
-          <div class = "p-header-right"> 
+          <div class = "p-header__right"> 
             <form class = "c-search-form" action="#">
-              <input class = "c-search-form__keyword" type="text" placeholder="&#xf002; 検索する">
+              <label for="search" class = "screen-reader-text"></label>
+              <input id = "search" name = "search" class = "c-search-form__keyword" type="text" placeholder="&#xf002; 検索する">
               <input class = "c-search-form__btn" type="submit" value="検索">
             </form>
           </div>
-          <div class = "p-header-menu-btn">
+          <div class = "p-header__menu-btn">
             <h2>Menu</h2>
           </div>
         </div>
@@ -196,16 +197,16 @@
       <!--sidebar part-->
       <div class = "l-sidebar">
         <div class = "p-menu">
-          <h2 class = "p-menu-title">Menu</h2>
+          <h2 class = "p-menu__title">Menu</h2>
           <!--タブレット時のメニューバーの×ボタン-->
           <div class = "p-close-btn"><span class="batsu"></span></div>
           <nav>
             <ul>
-              <li class = "p-menu-kind">
+              <li class = "p-menu__kind">
                 <h3>バーガー</h3>
-                <ul class = "p-menu-kind-detail">
-                  <li><a href="#">ハンバーガー</a></li>
-                  <li><a href="#">チーズバーガー</a></li>
+                <ul class = "p-menu__kind__detail">
+                  <li><a href="http://127.0.0.1:5500/git/Hamburger-site/archive-search.html">ハンバーガー</a></li>
+                  <li><a href="http://127.0.0.1:5500/git/Hamburger-site/archive.html">チーズバーガー</a></li>
                   <li><a href="#">テリヤキバーガー</a></li>
                   <li><a href="#">アボカドバーガー</a></li>
                   <li><a href="#">フィッシュバーガー</a></li>
@@ -213,18 +214,18 @@
                   <li><a href="#">チキンバーガー</a></li>
                 </ul>
               </li>
-              <li class = "p-menu-kind">
+              <li class = "p-menu__kind">
                 <h3>サイド</h3>
-                <ul class = "p-menu-kind-detail">
+                <ul class = "p-menu__kind__detail">
                   <li><a href = "#">ポテト</a></li>
                   <li><a href = "#">サラダ</a></li>
                   <li><a href = "#">ナゲット</a></li>
                   <li><a href = "#">コーン</a></li>
                 </ul>              
               </li>
-              <li class = "p-menu-kind">
+              <li class = "p-menu__kind">
                 <h3>ドリンク</h3>
-                <ul class = "p-menu-kind-detail">
+                <ul class = "p-menu__kind__detail">
                   <li><a href = "#">コーラ</a></li>
                   <li><a href = "#">ファンタ</a></li>
                   <li><a href = "#">オレンジ</a></li>
